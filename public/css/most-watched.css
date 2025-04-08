@@ -1,0 +1,91 @@
+.most-watched {
+    padding: 225px 170px;
+}
+
+.most-watched-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+
+.most-watched-header h2 {
+    font-size: 55px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.most-watched-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.most-watched-button a {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    color: #000000;
+    letter-spacing: 0.96px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.most-watched-button a .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #C1C1C1;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.most-watched-button a .icon-box img {
+    width: 19px;
+    height: 13px;
+}
+
+.most-watched-button a:hover .icon-box {
+    transform: translateX(5px);
+}
+
+@media (max-width: 1200px) {
+    .most-watched {
+        padding: 140px 40px;
+    }
+
+    .most-watched-header h2 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 800px) {
+    .most-watched {
+        padding: 80px 24px;
+    }
+
+    .most-watched-header h2 {
+        font-size: 32px;
+    }
+
+    .most-watched-button a {
+        font-size: 14px;
+    }
+
+    .most-watched-button a .icon-box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .most-watched-button a .icon-box img {
+        width: 16px;
+        height: auto;
+    }
+}
